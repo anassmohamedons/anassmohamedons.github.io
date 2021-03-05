@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 :root {
   --header-bg: #e4e4e4;
+  --hover-bg: #eeeeee;
 }
 
 .m-0 {
@@ -2260,9 +2261,15 @@ body, html {
 }
 
 a {
+  padding: 2px 6px;
   color: black;
   font-weight: 600;
   text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background: var(--hover-bg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2371,6 +2378,10 @@ hr {
   border-right: solid 2px var(--header-bg);
 }
 
+.side.is-affixed {
+  padding-top: 100px;
+}
+
 .main {
   -webkit-box-flex: 6.5;
       -ms-flex: 6.5;
@@ -2385,18 +2396,36 @@ hr {
 
 .details li {
   margin-bottom: 5px;
+  padding: 7px 9px;
+  border-radius: 5px;
 }
 
 .details li > i {
   width: 30px;
   height: 30px;
   padding-top: 7px;
-  margin-right: 5px;
+  margin-right: 2px;
   background: #535353;
   color: white;
   text-align: center;
   border-radius: 50%;
   line-height: 16px;
+}
+
+.details li a {
+  margin-left: -4px;
+}
+
+.details li img {
+  border-radius: 5px;
+}
+
+.details.hover li:hover {
+  background: var(--hover-bg);
+}
+
+.details.hover a:hover {
+  background: #cbcbcb;
 }
 
 .list {
@@ -2433,7 +2462,7 @@ hr {
 .with-bullet::before {
   content: '';
   position: absolute;
-  left: -40px;
+  left: -49px;
   top: calc(50% - 8px);
   width: 10px;
   height: 10px;
@@ -2495,5 +2524,11 @@ hr {
   .header .container .name h3 {
     font-size: 4vw;
   }
+}
+
+.subtitle {
+  display: inline;
+  font-size: .9em;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@
 
 :root {
     --header-bg: #e4e4e4;
+    --hover-bg: #eeeeee;
 }
 
 @for $i from 0 through 50 {
@@ -32,9 +33,15 @@ body, html {
 }
 
 a {
+    padding: 2px 6px;
     color: black;
     font-weight: 600;
     text-decoration: none;
+    border-radius: 5px;
+
+    &:hover {
+        background: var(--hover-bg);
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,6 +140,10 @@ hr {
     flex: 3.5;
     min-height: 100px;
     border-right: solid 2px var(--header-bg);
+
+    &.is-affixed {
+        padding-top: 100px;
+    }
 }
 
 .main {
@@ -146,17 +157,37 @@ hr {
 
     li {
         margin-bottom: 5px;
+        padding: 7px 9px;
+        border-radius: 5px;
 
         > i {
             width: 30px;
             height: 30px;
             padding-top: 7px;
-            margin-right: 5px;
+            margin-right: 2px;
             background: #535353;
             color: white;
             text-align: center;
             border-radius: 50%;
             line-height: 16px;
+        }
+
+        a {
+            margin-left: -4px;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    &.hover {
+        li:hover {
+            background: var(--hover-bg);
+        }
+
+        a:hover {
+            background: darken($color: #e4e4e4, $amount: 10);
         }
     }
 }
@@ -194,7 +225,7 @@ hr {
     &::before {
         content: '';
         position: absolute;
-        left: -40px;
+        left: -49px;
         top: calc(50% - 8px);
         width: 10px;
         height: 10px;
@@ -271,4 +302,10 @@ hr {
             }
         }
     }
+}
+
+.subtitle {
+    display: inline;
+    font-size: .9em;
+    margin-bottom: 0;
 }
