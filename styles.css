@@ -2652,6 +2652,14 @@ hr {
   background: #1a1a1a;
 }
 
+.dark .with-line::before {
+  height: 2px;
+}
+
+.dark .with-line::after {
+  height: 2px;
+}
+
 .scroll-top {
   position: fixed;
   bottom: 20px;
