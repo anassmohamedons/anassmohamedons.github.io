@@ -308,6 +308,8 @@
         </div>
     </div>
 
+    <button class="scroll-top"><img src="assets/chevron-up.svg" alt="scroll-top"></button>
+
     <div class="hidden">
         <svg version="1.1" id="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -434,6 +436,8 @@
 </body>
 
 <script>
+    let scrollTopEl = document.querySelector('.scroll-top')
+
     if (window.innerWidth > 1000)
         new StickySidebar('.side', { topSpacing: 30 })
 
@@ -441,6 +445,15 @@
         document.body.classList.toggle('dark')
         document.querySelector('.switch-style').classList.toggle('on')
     }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500)
+            scrollTopEl.classList.add('show')
+        else
+            scrollTopEl.classList.remove('show')
+    })
+
+    scrollTopEl.addEventListener('click', () => window.scrollTo(0, 0))
 
     document.querySelector('.switch-style').addEventListener('click', function () {
         this.classList.toggle('on')
