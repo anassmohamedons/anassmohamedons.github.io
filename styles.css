@@ -2312,6 +2312,14 @@ hr {
           flex: 1;
 }
 
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -2323,6 +2331,8 @@ hr {
   padding: 100px 25px 5px;
   background: var(--header-bg);
   overflow: hidden;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.12);
 }
 
 .header .name {
@@ -2530,5 +2540,110 @@ hr {
   display: inline;
   font-size: .9em;
   margin-bottom: 0;
+}
+
+.switch-style {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+}
+
+.btn {
+  background-color: transparent;
+  border: 4px solid #d1d5da;
+  border-radius: 12.5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover .tick {
+  background-color: #3a434b;
+}
+
+.btn:active .tick {
+  background-color: #24292f;
+}
+
+.btn.btn-switch {
+  width: 50px;
+}
+
+.btn.btn-switch.on .tick .sun {
+  display: none;
+}
+
+.btn.btn-switch.on .tick .moon {
+  display: block;
+}
+
+.btn.btn-switch.on {
+  background-color: #2e2e2e;
+  border-color: #484848;
+}
+
+.btn.btn-switch.on .tick {
+  background-color: #484848;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.btn.btn-switch .tick {
+  background-color: #2f363d;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.15s ease-in-out;
+  transition: -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+.btn.btn-switch .tick .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  height: 100%;
+}
+
+.btn.btn-switch .tick .sun {
+  display: block;
+}
+
+.btn.btn-switch .tick .moon {
+  display: none;
+}
+
+.dark {
+  background: #121212;
+  color: #DFDFDF;
+  --header-bg: #1F1F1F;
+  --hover-bg: black;
+}
+
+.dark .header {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.dark a {
+  color: #DFDFDF;
+}
+
+.dark .with-bullet::before {
+  border-color: #121212;
 }
 /*# sourceMappingURL=styles.css.map */
