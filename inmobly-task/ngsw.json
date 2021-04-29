@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619736165741,
+  "timestamp": 1619736379154,
   "index": "/inmobly-task/index.html",
   "assetGroups": [
     {
@@ -67,7 +67,7 @@
     "/inmobly-task/favicon.ico": "e55e39c86023da9bd0770f0ea44c8a8b2bc3c877",
     "/inmobly-task/index.html": "9c4333f8b3ecb21e1bd22de2dd559bc9d83c8465",
     "/inmobly-task/main.f718f40b7a9ea4ed65ff.js": "3e43ed6fbe7a329878e82f3825d679fb1550395b",
-    "/inmobly-task/manifest.webmanifest": "acbb61ee5a41db58e968c38440403dad05946b99",
+    "/inmobly-task/manifest.webmanifest": "189235ce32625e9ddb3e255d038a9da208348a96",
     "/inmobly-task/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "/inmobly-task/runtime.65a9fea33681a1dbcc1c.js": "b33f60e00dae97110d38365ee29a8190c0f38c5b",
     "/inmobly-task/search.c08c64697a1809f36453.svg": "28dec040e2c2888a0dba97cf7562f4d3996035f4",
