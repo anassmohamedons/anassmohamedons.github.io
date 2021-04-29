@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1619733728396,
-  "index": "/index.html",
+  "timestamp": 1619734255286,
+  "index": "/inmobly-task/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/4.f2ae2d9a45c1e0ae3dac.js",
-        "/favicon.ico",
-        "/index.html",
-        "/main.60916eb03139ef6a1c50.js",
-        "/manifest.webmanifest",
-        "/polyfills.94daefd414b8355106ab.js",
-        "/runtime.65a9fea33681a1dbcc1c.js",
-        "/styles.f6191a8ab57c2d773932.css"
+        "/inmobly-task/4.f2ae2d9a45c1e0ae3dac.js",
+        "/inmobly-task/favicon.ico",
+        "/inmobly-task/index.html",
+        "/inmobly-task/main.60916eb03139ef6a1c50.js",
+        "/inmobly-task/manifest.webmanifest",
+        "/inmobly-task/polyfills.94daefd414b8355106ab.js",
+        "/inmobly-task/runtime.65a9fea33681a1dbcc1c.js",
+        "/inmobly-task/styles.f6191a8ab57c2d773932.css"
       ],
       "patterns": []
     },
@@ -30,42 +30,42 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/firebase.jpg",
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png",
-        "/assets/logo.png",
-        "/assets/search.svg"
+        "/inmobly-task/assets/firebase.jpg",
+        "/inmobly-task/assets/icons/icon-128x128.png",
+        "/inmobly-task/assets/icons/icon-144x144.png",
+        "/inmobly-task/assets/icons/icon-152x152.png",
+        "/inmobly-task/assets/icons/icon-192x192.png",
+        "/inmobly-task/assets/icons/icon-384x384.png",
+        "/inmobly-task/assets/icons/icon-512x512.png",
+        "/inmobly-task/assets/icons/icon-72x72.png",
+        "/inmobly-task/assets/icons/icon-96x96.png",
+        "/inmobly-task/assets/logo.png",
+        "/inmobly-task/assets/search.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/4.f2ae2d9a45c1e0ae3dac.js": "159cb1def0d2d4992223ca5a78cd88353f289e9c",
-    "/assets/firebase.jpg": "8244c08584392ecaf9ea5b42013322c2b52cc96c",
-    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/assets/logo.png": "8402b205f7f77251236cf8dbdbbd6bb78ca8da3f",
-    "/assets/search.svg": "28dec040e2c2888a0dba97cf7562f4d3996035f4",
-    "/favicon.ico": "09ff511524ae55fe030afd9dae94964ca5daea36",
-    "/index.html": "79ab7c6b10a40576113f9a59dc867c28b11246a6",
-    "/main.60916eb03139ef6a1c50.js": "80055e72fdee690b998b53d105a37268825b5309",
-    "/manifest.webmanifest": "acbb61ee5a41db58e968c38440403dad05946b99",
-    "/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "/runtime.65a9fea33681a1dbcc1c.js": "b33f60e00dae97110d38365ee29a8190c0f38c5b",
-    "/styles.f6191a8ab57c2d773932.css": "c27c46f33a231fab8ac563c4ff3a7dd6d057fa80"
+    "/inmobly-task/4.f2ae2d9a45c1e0ae3dac.js": "159cb1def0d2d4992223ca5a78cd88353f289e9c",
+    "/inmobly-task/assets/firebase.jpg": "8244c08584392ecaf9ea5b42013322c2b52cc96c",
+    "/inmobly-task/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/inmobly-task/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/inmobly-task/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/inmobly-task/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/inmobly-task/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/inmobly-task/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/inmobly-task/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/inmobly-task/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/inmobly-task/assets/logo.png": "8402b205f7f77251236cf8dbdbbd6bb78ca8da3f",
+    "/inmobly-task/assets/search.svg": "28dec040e2c2888a0dba97cf7562f4d3996035f4",
+    "/inmobly-task/favicon.ico": "09ff511524ae55fe030afd9dae94964ca5daea36",
+    "/inmobly-task/index.html": "67c665a86fb400324f509744500613c8eb25069c",
+    "/inmobly-task/main.60916eb03139ef6a1c50.js": "80055e72fdee690b998b53d105a37268825b5309",
+    "/inmobly-task/manifest.webmanifest": "acbb61ee5a41db58e968c38440403dad05946b99",
+    "/inmobly-task/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/inmobly-task/runtime.65a9fea33681a1dbcc1c.js": "b33f60e00dae97110d38365ee29a8190c0f38c5b",
+    "/inmobly-task/styles.f6191a8ab57c2d773932.css": "c27c46f33a231fab8ac563c4ff3a7dd6d057fa80"
   },
   "navigationUrls": [
     {
