@@ -1,148 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<img class="print-bg" src="assets/quotation/bg.png">
+<div class="print-text-center"><img src="assets/quotation/logo.png" width="200"></div>
+<div class="print-row" style="margin-top: 15px">
+    <div class="print-col print-text-center">#CLIENT_NAME</div>
+    <div class="print-col print-text-center"><a class="print" href="mailto:#CLIENT_EMAIL">#CLIENT_EMAIL</a></div>
+    <div class="print-col print-text-center"><a class="print" href="tel:#CLIENT_PHONE">#CLIENT_PHONE</a></div>
+</div>
+<div class="print-row print-color" style="margin-top: 15px">
+    <div class="print-col print-text-center"><strong>INVOICE ##INVOICE_NUM</strong></div>
+    <div class="print-col print-text-center"><strong>DATE &nbsp;&nbsp; #INVOICE_DATE</strong></div>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Four Elements Quotation</title>
+<div class="print-header">About the project</div>
+<p>THE PROJECT: #PROJECT_NAME</p>
+<p>LOCATION: #PROJECT_ADDRESS</p>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+<div class="print-header" style="margin-bottom: 0;">Project details</div>
+<div class="print-header bg" style="margin-top: -1px;">
+    <p class="print-inline" style="width: 28%;">ITEM</p>
+    <p class="print-inline" style="width: 18%;">DESCRIPTION</p>
+    <p class="print-inline" style="width: 16%;">COST/UNIT</p>
+    <p class="print-inline" style="width: 16%;">QTY</p>
+    <p class="print-inline" style="width: 16%;">TOTAL</p>
+</div>
 
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
+#ITEMS
 
-        * {
-            box-sizing: border-box;
-        }
+<div class="print-item">
+    <p class="print-inline" style="max-width: 78%; text-align: right; padding-right: 15px;"><strong>Sub total</strong></p>
+    <p class="print-inline" style="max-width: 16%;">#SUBTOTAL EGP</p>
+</div>
+#TAX
+#DISCOUNT
+<div class="print-item">
+    <p class="print-inline" style="max-width: 78%; text-align: right; padding-right: 15px;"><strong>Total</strong></p>
+    <p class="print-inline" style="max-width: 22%;">#TOTAL EGP</p>
+</div>
 
-        a {
-            color: #0097A7;
-        }
+<div class="print-header">Timing & Payment Terms</div>
+<p>TIMING: #PROJECT_DUE</p>
+<p>PAYMENT TERMS: #PROJECT_TERMS</p>
+<p>NOTES: #NOTES</p>
 
-        body {
-            padding: 40px 20px;
-            background: url(http://localhost:4200/assets/quotation/bg.png) no-repeat center center;
-            background-size: 100%;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-        }
+<div class="print-line"></div>
+<p class="print-text-center">REFERENCE:</p>
+<div class="print-row" style="margin-top: 5px">
+    <div class="print-col print-text-center">Omar Alaa: (+2) 0100 661 83 91</div>
+    <div class="print-col print-text-center">Ahmed El Sherbini: (+2) 0111 660 22 20</div>
+</div>
+<div class="print-row" style="margin-top: 5px">
+    <div class="print-col print-text-center">Ahmed El Daba: (+2) 0122 796 72 26</div>
+    <div class="print-col print-text-center">Ismail A. Omar: (+2) 0100 007 27 27</div>
+</div>
 
-        .text-center {
-            text-align: center;
-        }
+<div class="print-text-center"><img src="assets/quotation/sig.png" width="200"
+        style="margin-top: 15px;"></div>
+<div class="print-line" style="width: 60px;"></div>
 
-        .row {
-            display: flex;
-        }
-
-        .col {
-            flex: 1;
-        }
-
-        .color {
-            color: #A4723D;
-        }
-
-        .header {
-            padding: 15px 5px;
-            border-top: solid thin #A4723D;
-            border-bottom: solid thin #A4723D;
-            text-transform: uppercase;
-            margin: 10px 0;
-            color: #A4723D;
-            font-weight: bold;
-        }
-
-        .header.bg {
-            background: rgba(164, 114, 61, .1);
-        }
-
-        p {
-            font-size: 16px;
-            margin: 0;
-        }
-
-        .inline {
-            display: inline-block;
-        }
-
-        .line {
-            background: #A4723D;
-            height: 1px;
-            margin: 20px auto;
-        }
-
-        .item {
-            display: flex;
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: solid thin rgba(164, 114, 61, .2);
-        }
-
-        .item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .item p {
-            flex: 1;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="text-center"><img src="http://localhost:4200/assets/quotation/logo.png" width="200"></div>
-    <div class="row" style="margin-top: 15px">
-        <div class="col text-center">#CLIENT_NAME</div>
-        <div class="col text-center"><a href="mailto:#CLIENT_EMAIL">#CLIENT_EMAIL</a></div>
-        <div class="col text-center"><a href="tel:#CLIENT_PHONE">#CLIENT_PHONE</a></div>
-    </div>
-    <div class="row color" style="margin-top: 15px">
-        <div class="col text-center"><strong>INVOICE ##INVOICE_NUM</strong></div>
-        <div class="col text-center"><strong>DATE &nbsp;&nbsp; #INVOICE_DATE</strong></div>
-    </div>
-
-    <div class="header">About the project</div>
-    <p>THE PROJECT: #PROJECT_NAME</p>
-    <p>LOCATION: #PROJECT_ADDRESS</p>
-
-    <div class="header" style="margin-bottom: 0;">Project details</div>
-    <div class="header bg" style="margin-top: -1px;">
-        <p class="inline" style="width: 28%;">ITEM</p>
-        <p class="inline" style="width: 16%;">COST</p>
-        <p class="inline" style="width: 16%;">UNIT</p>
-        <p class="inline" style="width: 16%;">QTY</p>
-        <p class="inline" style="width: 18%;">DESCRIPTION</p>
-    </div>
-
-    #ITEMS
-
-    <div class="header">Timing & Payment Terms</div>
-    <p>TIMING: #PROJECT_DUE</p>
-    <p>PAYMENT TERMS: #PROJECT_TERMS</p>
-
-    <div class="line"></div>
-    <p class="text-center">REFERENCE:</p>
-    <div class="row" style="margin-top: 5px">
-        <div class="col text-center">Omar Alaa: (+2) 0100 661 83 91</div>
-        <div class="col text-center">Ahmed El Sherbini: (+2) 0111 660 22 20</div>
-    </div>
-    <div class="row" style="margin-top: 5px">
-        <div class="col text-center">Ahmed El Daba: (+2) 0122 796 72 26</div>
-        <div class="col text-center">Ismail A. Omar: (+2) 0100 007 27 27</div>
-    </div>
-
-    <div class="text-center"><img src="http://localhost:4200/assets/quotation/sig.png" width="200"
-            style="margin-top: 15px;"></div>
-    <div class="line" style="width: 60px;"></div>
-
-    <p class="text-center" style="margin-top: 20px;">+2 02 2 240 39 38</p>
-    <p class="text-center">12 El Montazah St.G-Floor. Apt. 2. Heliopolis. Cairo. Egypt.</p>
-</body>
-
-</html>
+<p class="print-text-center" style="margin-top: 20px;">+2 02 2 240 39 38</p>
+<p class="print-text-center">12 El Montazah St.G-Floor. Apt. 2. Heliopolis. Cairo. Egypt.</p>
