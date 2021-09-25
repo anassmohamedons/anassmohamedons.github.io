@@ -1,5 +1,5 @@
 (function (global) {
-    const API_ENDPOINT = 'http://localhost:3000/emails/'
+    const API_ENDPOINT = 'https://anas-dalia-task.herokuapp.com/emails/'
 
     let config = {
         right: 20,
