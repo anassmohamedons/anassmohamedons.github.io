@@ -81,7 +81,7 @@
 
         function fetchEmails() {
             emailsContainer.className = 'emails-container'
-            fetch('http://localhost:3000/emails/')
+            fetch('https://anas-dalia-task.herokuapp.com/emails/')
                 .then(res => res.json())
                 .then(onSuccess)
                 .catch(onFailed)
