@@ -1,5 +1,5 @@
 (function (global) {
-    const API_ENDPOINT = 'https://anas-dalia-task.herokuapp.com/emails/'
+    const API_ENDPOINT = 'http://localhost:3000/emails/'
 
     let config = {
         right: 20,
@@ -26,7 +26,6 @@
     let theme = {
         primary: "#5C00F5",
         primaryDark: "#4b00c7",
-        accent: "#49BAA7",
         textLight: "white",
         textDark: "#333",
     }
@@ -72,7 +71,7 @@
                 .popup-btn.open .opened { top: calc(50% - 12px); opacity: 1; }
 
                 .popup-body {
-                    position: absolute;
+                    position: fixed;
                     right: ${config.right}px;
                     bottom: ${config.btnHeight}px;
                     width: calc(100% - ${config.right * 2}px);
